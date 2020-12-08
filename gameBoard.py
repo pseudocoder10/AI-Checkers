@@ -60,7 +60,7 @@ class GameBoard:
                 self.checkers2.append(piece)
 
     def makeAIMove(self):
-        res = AI.solve(self.checkers1, self.checkers2, self.turn, 5)
+        res = AI.solve(self.checkers1, self.checkers2, self.turn, 4)
         moves = res[1]
         currCoord = moves[0]
         for coord in moves[1:]:
